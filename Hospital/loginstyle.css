@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .centered-header { 
+      text-align: center; 
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    
+  }
+
+  
+  .footer {  
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .firstfooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .main {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  
+  .header a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: solid;
+    font-size: 20px;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-size: 20px;
+  }
+  .header a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* General form styling */
+  form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  /* Style all input fields */
+  input[type="text"], input[type="number"], input[type="date"], input[type="email"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Style the select dropdown */
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+  
+  /* Style the submit button */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: lightgray;
+    color: black;
+  }
+  
+   /* Table styles */
+   table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  thead tr {
+    background-color: grey;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  th {
+    padding: 12px 15px;
+  }
+  
+  td {
+    text-align: center;
+    padding: 12px 15px;
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  tbody tr:last-of-type {
+    border-bottom: 2px solid skyblue;
+  }
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  
+/* Style for Pagination */
+
+.pagination a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.pagination strong {
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+/* End of pagination styling */
+
